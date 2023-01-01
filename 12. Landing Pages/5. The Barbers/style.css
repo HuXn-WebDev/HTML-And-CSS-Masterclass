@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto&display=swap");
+
+:root {
+  --main-color: #37132d;
+  --main-font: "Playfair Display", serif;
+  --secondary-font: "Roboto", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+}
+
+ul li a {
+  text-decoration: none;
+  margin: 10px;
+  color: #000;
+  font-family: var(--secondary-font);
+}
+
+/* Header Content */
+.content__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.header__heading {
+  font-size: 4rem;
+  font-family: var(--main-font);
+}
+
+.header__sub-headings {
+  width: 70%;
+  font-family: var(--secondary-font);
+  color: rgb(82, 82, 82);
+  margin: 20px 0;
+}
+
+.header__img {
+  width: 200px;
+  height: 300px;
+}
+
+.header__img-container {
+  width: 30%;
+  height: 50vh;
+  position: relative;
+}
+
+.img-one {
+  position: absolute;
+  left: 10rem;
+}
+
+.img-two {
+  position: absolute;
+  left: 3rem;
+  top: 8rem;
+}
+
+.main-btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  background: var(--main-color);
+  color: #fff;
+  font-family: var(--secondary-font);
+}
+/* End of Header Section */
+
+/* Experience Start */
+.experience {
+  height: 90vh;
+  margin-left: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.experience-img {
+  background-image: url("assets/eugene-chystiakov-taZSJ6xmt48-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 350px;
+  margin-right: 50px;
+}
+
+.gray-heading {
+  color: gray;
+  font-family: var(--main-font);
+}
+
+.btn-container {
+  margin-top: 30px;
+}
+/* ؑEnd Of Experience Section */
+
+/* Social Media Start */
+.social-media {
+  margin: 5rem;
+}
+
+.sm-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.follow {
+  padding: 20px;
+  background: var(--main-color);
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  margin-right: 3rem;
+  text-align: center;
+}
+/* End Social Media Section */
+
+/* Hero Section Start */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img-container {
+  background-image: url("assets/albert-dera-ILip77SbmOE-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
+  width: 300px;
+  height: 400px;
+}
+
+.hero__sub-headings {
+  width: 400px;
+}
+
+.hero__content {
+  margin-left: 6rem;
+}
+/* End of Hero Section */
+
+/* Services Section Start */
+.services {
+  margin-top: 10rem;
+}
+
+.services_g-heading {
+  margin-left: 5rem;
+}
+
+.services-heading {
+  margin-left: 5rem;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  box-shadow: 1px 1px 1px 1px rgb(223, 223, 223);
+  margin: 20px;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: top;
+}
+
+.img-one {
+  background-image: url(assets/john-arano-CCTCHXEsan8-unsplash.jpg);
+}
+.img-two {
+  background-image: url(assets/allef-vinicius-IvQeAVeJULw-unsplash.jpg);
+}
+.img-three {
+  background-image: url(assets/christoffer-engstrom-1ouGlRChSbY-unsplash.jpg);
+}
+
+.card-content {
+  transform: translateY(200px);
+  text-align: center;
+  margin: 10px;
+}
+
+.card-title {
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-bottom: 20px 0;
+  color: #000;
+}
+
+.card-info {
+  font-family: var(--secondary-font);
+  text-align: center;
+  color: rgb(109, 109, 109);
+  margin: 30px 40px;
+}
+/* Services Section End */
+
+/* Footer Start */
+.footer {
+  background: var(--main-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  height: 50vh;
+  margin-top: 10rem;
+}
+
+.footer__card-title {
+  font-family: var(--main-font);
+}
+
+.footer__card-info {
+  font-family: var(--secondary-font);
+  line-height: 2rem;
+}
+/* Footer End */
+
+@media only screen and (max-width: 600px) {
+  .header__content {
+    align-items: center;
+    text-align: center;
+    width: 70%;
+  }
+
+  .header__img-container {
+    display: none;
+  }
+
+  .experience {
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .experience-headings {
+    font-size: 3rem;
+  }
+
+  .experience-img {
+    width: 200px;
+    height: 300px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .experience__sub-headings {
+    margin: 20px auto;
+  }
+
+  .btn-container {
+    margin-top: 30px;
+    margin-bottom: 3.5rem;
+  }
+
+  .follow {
+    display: none;
+  }
+
+  .sm-container {
+    flex-direction: column;
+  }
+
+  .list-items {
+    margin: 10px;
+  }
+
+  .hero-img-container {
+    width: 300px;
+    height: 400px;
+  }
+
+  .hero__headings {
+    font-size: 3rem;
+  }
+
+  .hero__content {
+    margin: 0 auto;
+  }
+
+  .services {
+    margin-top: 10rem;
+  }
+}
