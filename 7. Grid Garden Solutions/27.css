@@ -1,0 +1,9 @@
+#garden {
+  display: grid;
+  grid-template: 60% 60% / 200px /* Answer */
+}
+
+#water {
+  grid-column: 1;
+  grid-row: 1;
+}

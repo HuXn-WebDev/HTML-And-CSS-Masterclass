@@ -1,0 +1,5 @@
+#garden {
+  display: grid;
+  grid-template-columns: 100px 3em 40% /* Answer */
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}

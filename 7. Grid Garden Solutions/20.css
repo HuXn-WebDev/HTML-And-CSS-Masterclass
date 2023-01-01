@@ -1,0 +1,10 @@
+#garden {
+  display: grid;
+  grid-template-columns: 50%; /* Answer */
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column: 1;
+  grid-row: 1;
+}

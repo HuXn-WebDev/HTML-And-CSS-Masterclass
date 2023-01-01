@@ -1,0 +1,5 @@
+#garden {
+  display: grid;
+  grid-template-columns: 75px 3fr 2fr /* Answer */
+  grid-template-rows: 100%;
+}
