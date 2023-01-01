@@ -1,0 +1,84 @@
+/* 
+    * Mix Blind Mode
+    - The mix-blend-mode CSS property sets how an element's content should blend with the content of the element's parent and the element's background.
+
+    * VALUES
+        - normal    
+        - multiply
+        - screen 	 
+        - overlay 	 
+        - darken 	 
+        - lighten 	 
+        - color-dodge
+        - color-burn
+        - difference
+        - exclusion
+        - hue 	     
+        - saturation
+        - color 	 
+        - luminosity
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: red;
+}
+
+/* --------- SIMPLE BLINED MOOD ---------  */
+
+/* .container .img {
+  background-image: url("sandy-ravaloniaina-szvb5ysGo_o-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  mix-blend-mode: normal;
+  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
+
+  === You cannot apply pure like "red" or "blue" on overlay, for that you'll have to decrease the opacity ===
+  mix-blend-mode: overlay;
+
+  mix-blend-mode: darken;
+  mix-blend-mode: lighten;
+  mix-blend-mode: color-dodge;
+  mix-blend-mode: color-burn;
+  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
+  mix-blend-mode: hue;
+  mix-blend-mode: saturation;
+  mix-blend-mode: color;
+  mix-blend-mode: luminosity;
+} */
+
+/* --------- USING GRADIENTS ---------  */
+/* .container .img {
+  background-image: linear-gradient(steelblue, firebrick),
+    url("sandy-ravaloniaina-szvb5ysGo_o-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  background-blend-mode: overlay;
+} */
+
+/* --------- MIXING TWO IMAGES ---------  */
+.container .img {
+  background-image: url("sandy-ravaloniaina-szvb5ysGo_o-unsplash.jpg"),
+    url("jonas-vandermeiren-zvXQyJsg9Wg-unsplash.jpg"),
+    linear-gradient(steelblue, firebrick);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  /* background-blend-mode: overlay; */
+  background-blend-mode: multiply, screen;
+}
