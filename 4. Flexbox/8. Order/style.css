@@ -1,0 +1,48 @@
+/* 
+    * Order Property
+    -  Flex items are displayed in the same order as they appear in the DOM by default.
+    - The order property can be used to change this ordering.
+
+    - Flex items have a default order value of 0, therefore items with an integer value greater than 0 will be displayed after any items that have not been given an explicit order value.
+
+    - You can also use negative values with order, which can be quite useful. If you want to make one item display first and leave the order of all other items unchanged, you can give that item order of -1. As this is lower than 0 the item will always be displayed first.
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: blueviolet;
+}
+
+.container {
+  border: 2px solid white;
+  width: 700px;
+  height: 410px;
+  margin: 20px auto;
+  /* Flexbox Code Goes Here */
+  display: flex;
+}
+
+.third {
+  order: 0; /* Default */
+  order: 1;
+}
+
+.fourth {
+  order: -1;
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  background: rgb(42, 21, 62);
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}

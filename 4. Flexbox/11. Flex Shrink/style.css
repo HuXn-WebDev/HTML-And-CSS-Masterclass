@@ -1,0 +1,45 @@
+/* 
+    * Flex Grow
+    - The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container
+    - The flex-shrink CSS property sets the flex shrink factor of a flex item. If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink.
+    - Default Value: 1
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: blueviolet;
+}
+
+.container {
+  border: 2px solid white;
+  width: 700px;
+  height: 410px;
+  margin: 20px auto;
+  /* Flexbox Code Goes Here */
+  display: flex;
+}
+
+.third {
+  flex-shrink: 2;
+}
+
+.second {
+  flex-shrink: 4;
+}
+
+.container div {
+  /* HERE YOU CAN SEE I INCREASE THE WIDTH */
+  width: 400px;
+  height: 40px;
+  background: rgb(42, 21, 62);
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}

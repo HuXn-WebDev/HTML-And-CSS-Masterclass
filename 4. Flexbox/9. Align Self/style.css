@@ -1,0 +1,42 @@
+/* 
+    * Flex Self
+    - The align-self CSS property overrides a flex item's align-items value.
+    - & it works on single value.
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: blueviolet;
+}
+
+.container {
+  border: 2px solid white;
+  width: 700px;
+  height: 410px;
+  margin: 20px auto;
+  /* Flexbox Code Goes Here */
+  display: flex;
+}
+
+.third {
+  align-self: stretch; /* Default */
+  align-self: flex-start;
+  align-self: flex-end;
+  align-self: center;
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  background: rgb(42, 21, 62);
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}

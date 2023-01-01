@@ -1,0 +1,40 @@
+/* 
+    * Flex Basis 
+    - The flex-basis property defines the size of the flex-item along the main axis of the flex container.
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: blueviolet;
+}
+
+.container {
+  border: 2px solid white;
+  width: 700px;
+  height: 410px;
+  margin: 20px auto;
+  /* Flexbox Code Goes Here */
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  background: rgb(42, 21, 62);
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+#third {
+  /* width: 200px; */
+  flex-basis: 400px;
+  /* CHANGE FLEX-DIRECTION FROM ROW TO COLUMN AND PLAY AROUND WITH FLEX-BASIS */
+}

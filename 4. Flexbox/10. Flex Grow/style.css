@@ -1,0 +1,44 @@
+/* 
+    * Flex Grow
+    - The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+    - If the element is not a flexible item, the flex-grow property has no effect.
+    - Default Value 0
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: blueviolet;
+}
+
+.container {
+  border: 2px solid white;
+  width: 700px;
+  height: 410px;
+  margin: 20px auto;
+  /* Flexbox Code Goes Here */
+  display: flex;
+}
+
+.first {
+  flex-grow: 4;
+}
+
+.third {
+  flex-grow: 1;
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  background: rgb(42, 21, 62);
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}
