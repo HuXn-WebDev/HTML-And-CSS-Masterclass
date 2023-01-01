@@ -1,0 +1,46 @@
+/* 1. Pixels (px) */
+.px {
+  height: 200px;
+  width: 200px;
+  background-color: cyan;
+  border-radius: 100px;
+}
+
+/* 2. Percent Unit (%) */
+.parent {
+  width: 500px;
+  height: 500px;
+  background-color: darkblue;
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  background: cyan;
+}
+
+/* 3. em */
+.em {
+  font-size: 2em;
+}
+
+/* 4. rem */
+html {
+  font-size: 3rem;
+}
+
+/* div {
+  font-size: 4rem;
+} */
+
+.rem {
+  font-size: 2rem;
+}
+
+/* 5. vh */
+/* 6. vw */
+div {
+  background: crimson;
+  height: 50vh;
+  width: 100vw;
+}
