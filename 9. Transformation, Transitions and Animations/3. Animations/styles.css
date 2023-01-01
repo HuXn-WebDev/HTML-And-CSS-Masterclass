@@ -1,0 +1,39 @@
+/* animation-name */
+/* animation-duration */
+/* animation-delay */
+/*  animation-iteration-count */
+/* animation-timing-function */
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div {
+  width: 300px;
+  height: 300px;
+  background-color: darkblue;
+  animation-name: InAndOut;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  /* animation-iteration-count: 2; */
+  /* animation-timing-function: ease-out; */
+}
+
+@keyframes InAndOut {
+  0% {
+    transform: scale(2);
+  }
+  25% {
+    transform: scale(0.2);
+    background-color: teal;
+    transform: skew(10deg);
+  }
+  50% {
+    background-color: blue;
+    transform: skew(40deg);
+    border-radius: 50%;
+  }
+}

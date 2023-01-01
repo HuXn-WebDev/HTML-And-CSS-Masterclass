@@ -1,0 +1,21 @@
+/* translate() */
+/* rotate() */
+/* scale() */
+/* skew() */
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div {
+  width: 300px;
+  height: 300px;
+  background-color: cyan;
+  transform: translateY(300px);
+  transform: rotate(-20deg);
+  transform: scale(0.2, 1);
+  transform: skew(50deg);
+}

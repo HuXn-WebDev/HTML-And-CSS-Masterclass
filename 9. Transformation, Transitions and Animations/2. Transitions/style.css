@@ -1,0 +1,25 @@
+/* transition-property: all;
+transition-duration: 1s;
+transition-timing-function: ease-out; 
+transition-delay: 1;*/
+
+.container {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > a {
+  text-decoration: none;
+  border: 2px solid red;
+  padding: 10px 20px;
+  color: brown;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.container > a:hover {
+  background-color: brown;
+  color: white;
+}
