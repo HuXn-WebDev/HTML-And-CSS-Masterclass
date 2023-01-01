@@ -1,0 +1,42 @@
+/* ******************************************** */
+/* border: width, style, color */
+/* ------- BORDER SHORTHAND ------- */
+/* ------- BORDER RADIUS ------- */
+/* ------- TOP, BOTTOM, LEFT, RIGHT ------- */
+h1 {
+  /* 
+    border-width: 2px;
+    border-style: dashed;
+    border-color: red;
+  */
+  /* border: 4px solid brown; */
+  /* border-left: 2px solid red; */
+  /* border-right: 2px solid red; */
+  /* border-top: 2px solid red; */
+  /* border-bottom: 2px solid red; */
+}
+
+/* ******************************************** */
+/* ------- PADDING, TOP, BOTTOM, LEFT, RIGHT ------- */
+/* ------- PADDING SHORTHAND ------- */
+h2 {
+  border: 2px solid brown;
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+  /* text-align: right; */
+  /* padding: 20px 30px; */
+}
+
+/* ******************************************** */
+/* ------- MARGIN, TOP, BOTTOM, LEFT, RIGHT ------- */
+/* ------- MARGIN SHORTHAND ------- */
+h3 {
+  border: 2px solid brown;
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
+  /* margin: 20px 30px; */
+}
