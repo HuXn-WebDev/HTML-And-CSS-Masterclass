@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+}
+
+.container {
+  background: rgb(34, 34, 34);
+  padding: 20px;
+  /* height: 100vh; */
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(2, 100px);
+  /* grid-template: repeat(4, 100px) / repeat(4, 100px); */
+  /* grid-row-gap: 20px;
+  grid-column-gap: 10px; */
+  grid-gap: 10px;
+
+  /* first layout */
+  /* grid-template-areas:
+    "h h h h h"
+    "m m m m m"
+    "m m m m m"
+    "s s . a a "
+    "f f f f f"; */
+
+  /* Second Layout */
+  /* grid-template-areas:
+    "h h h h"
+    "s s m m"
+    "a a m m"
+    "f f f f"; */
+
+  /* Third Layout */
+  grid-template-areas:
+    "h h h h"
+    "m m s s"
+    "m m a a"
+    "f f f f";
+}
+
+header {
+  grid-area: h;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: m;
+}
+
+section {
+  grid-area: s;
+}
+aside {
+  grid-area: a;
+}
+
+footer {
+  grid-area: f;
+}
+
+.s {
+  padding: 20px;
+  background: rgb(84, 84, 84);
+  text-align: center;
+  color: #fff;
+}
