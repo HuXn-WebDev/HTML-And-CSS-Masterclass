@@ -1,0 +1,20 @@
+/* Link */
+.link:link {
+  color: seagreen;
+}
+
+/* Visited */
+.visited:visited {
+  color: tomato;
+}
+
+/* Hover  */
+.hover:hover {
+  color: violet;
+  font-size: 3rem;
+}
+
+/* Active  */
+.active:active {
+  color: yellow;
+}
