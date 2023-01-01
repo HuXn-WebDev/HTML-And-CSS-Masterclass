@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+
+    * DRY
+    - Do not repeat yourself
+*/
+
+/* ----- BAD WAY   ----- */
+/* section.one .btn {
+  background: transparent;
+  border: none;
+  margin: 10px;
+  background: rgb(6, 6, 6);
+  padding: 1em 2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+section.two .btn {
+  background: transparent;
+  border: none;
+  margin: 10px;
+  background: teal;
+  padding: 1em 2em;
+  color: #fff;
+  cursor: pointer;
+} */
+
+/* ----- GREAT WAY ----- */
+/* .btn {
+  background: transparent;
+  border: none;
+  margin: 10px;
+  background: rgb(6, 6, 6);
+  padding: 1em 2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: crimson;
+}
+
+.btn-secondary {
+  background: teal;
+} */
+
+/* ----- BAD WAY ----- */
+/* .card {
+  border: 2px solid black;
+  max-width: 40%;
+  height: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card .card-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  background-image: url("https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.card .card-title {
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+.card .card-info {
+  font-family: sans-serif;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+.btn {
+  font-family: sans-serif;
+  margin-top: 1.4rem;
+  background: transparent;
+  border: none;
+  padding: 1em 1em;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-fill {
+  background: rgb(20, 20, 20);
+}
+
+.btn-outline {
+  color: rgb(20, 20, 20);
+  font-weight: bold;
+  border-bottom: 2px solid;
+  border-width: 2px;
+  margin-left: 20px;
+} */
+
+/* ------- GREAT WAY ------ */
+/* 
+    1. Inherite the font-family
+    2. Used shorthand & vars for background
+    3. Used Vars for background-colors
+*/
+
+:root {
+  --primary-color: rgb(20, 20, 20);
+  /* position, size, repeat */
+  --center-img: center/cover no-repeat;
+}
+
+.card {
+  border: 2px solid black;
+  max-width: 40%;
+  height: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.card .card-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  background: url("https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80")
+    var(--center-img);
+  width: 100px;
+  height: 100px;
+}
+
+.card .card-title {
+  margin-top: 20px;
+}
+
+.card .card-info {
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 1.4rem;
+  background: transparent;
+  border: none;
+  padding: 1em 1em;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-fill {
+  background: var(--primary-color);
+}
+
+.btn-outline {
+  color: var(--primary-color);
+  font-weight: bold;
+  border-bottom: 2px solid;
+  margin-left: 20px;
+}
