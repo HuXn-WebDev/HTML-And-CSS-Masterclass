@@ -1,0 +1,25 @@
+/* COLOR NAMES */
+h1 {
+  color: blue;
+}
+
+/* RGB */
+h2 {
+  color: rgb(40, 30, 55);
+}
+
+/* RGBA */
+h3 {
+  color: rgba(0, 100, 30, 0.2);
+}
+
+/* HEX */
+
+h4 {
+  color: #00c4ff;
+}
+
+/* COLORS RESOURCES */
+/* https://galactic.ink/sphere/ */
+/* https://color.adobe.com/create/color-wheel */
+/* Color Picker for Chrome Extensions*/
