@@ -1,0 +1,57 @@
+/* 1 */
+
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: nowrap; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* align-content: stretch; */
+  /* align-self: auto; */
+  /* order: 0; */
+  /* flex-grow: 0; */
+  /* flex-shrink: 1; */
+}
+
+.container div {
+  background: teal;
+  margin: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+/* 2 */
+.section-two {
+  display: flex;
+}
+
+.section-two article,
+footer {
+  /* it will give you weird UI, because we're increasing the width and height of "article" children not the h1's */
+  width: 50px;
+  height: 50px;
+  background: crimson;
+  margin: 10px;
+}
+
+/* 3 */
+nav {
+  margin-top: 5rem;
+  background: purple;
+  display: flex;
+  /* Don't worry about this code */
+  justify-content: space-between;
+}
+
+nav ul {
+  border: 2px solid red;
+}
+
+ul li {
+  display: inline;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
