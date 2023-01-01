@@ -1,0 +1,16 @@
+/* VARIABLES (Custom Properties) */
+
+:root {
+  --primary-color: teal;
+  --size: 4rem;
+  --bg-color: red;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: var(--size);
+  background-color: var(--bg-color);
+}
