@@ -1,0 +1,37 @@
+/* 
+    * Media Queries
+    - Allows us to provide different styles for different devices
+        - depends on their features.
+*/
+
+body {
+  background: coral;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+    If the screen size is maxmium of 1200px this styling will be applied (if the screen size is bigger then 1200px these styling will not work)
+ */
+@media screen and (max-width: 1200px) {
+  body {
+    background: pink;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background: steelblue;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background: crimson;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: chartreuse;
+  }
+}
