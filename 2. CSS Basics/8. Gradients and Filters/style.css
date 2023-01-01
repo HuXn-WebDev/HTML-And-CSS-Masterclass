@@ -1,0 +1,13 @@
+/* https://www.grabient.com/ */
+/* https://webgradients.com/ */
+
+div {
+  width: 300px;
+  height: 300px;
+  /*  ************** LINEAR GRADIENT  ************** */
+  /* background-image: linear-gradient(to left, purple, yellow); */
+  background-image: linear-gradient(to right, purple, yellow);
+
+  /*  ************** RADIAL GRADIENT ************** */
+  /* background-image: radial-gradient(circle, yellow, green); */
+}
