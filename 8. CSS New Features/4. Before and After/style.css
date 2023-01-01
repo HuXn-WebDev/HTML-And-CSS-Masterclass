@@ -1,0 +1,40 @@
+/* 
+    * ::before
+    - selector inserts content before a selected element.
+
+    * ::after
+    - inserts content after a specified element
+    - These selectors are commonly used to add text before or after a paragraph or a link
+*/
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+/* img::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: purple;
+} */
+
+p::before {
+  content: "Hello";
+  background: red;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 800;
+}
+
+p::after {
+  content: "bye";
+  background: red;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 800;
+}
