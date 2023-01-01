@@ -1,0 +1,19 @@
+/* 
+    * Calc Function ()
+    - It is an inbuilt CSS function which allows us to perform calculations. It can be used to calculate length, percentage, time, number, integer frequency, or angle. It uses the four simple arithmetic operators add (+), subtract (-), multiply (*), and divide (/).
+*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s {
+  background: crimson;
+  width: calc(100px + 100px);
+  height: calc(100px - 50px);
+  margin: calc(20px * 2);
+  border-radius: 15px calc(15px / 10) 4px 2px;
+  padding: calc(200px / 10);
+}
