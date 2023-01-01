@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Oi&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&familyOi&display=swap");
+
+/* font-family */
+/* font-size */
+/* font-weight */
+/* text-transform */
+/* line-height */
+/* letter-spacing */
+/* word-spacing */
+/* text-align */
+/* text-decoration */
+
+h1 {
+  /* font-family: monospace; */
+  font-weight: normal;
+  /* letter-spacing: 20px; */
+  word-spacing: 5px;
+  text-align: center;
+  /* font-family: "Oi", cursive; */
+  font-family: "Dancing Script", cursive;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 50px;
+  word-spacing: 10px;
+}
+
+a {
+  text-decoration: none;
+}
