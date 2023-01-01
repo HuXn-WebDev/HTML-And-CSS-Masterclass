@@ -1,0 +1,23 @@
+/* background-color */
+/* background-image */
+/* background-repeat */
+/* background-position */
+/* background-attachment */
+
+/* BACKGROUND-SHORT-HAND */
+
+* {
+  margin: 0;
+}
+
+div {
+  height: 100vh;
+  /* background-color: aqua;
+  background-image: url("assets/v2osk-1Z2niiBPg5A-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+  background: url("v2osk-1Z2niiBPg5A-unsplash.jpg") no-repeat center / cover
+    fixed;
+}
