@@ -1,0 +1,51 @@
+/* 
+  * Justify Content
+  - The justify-content property aligns the items, when the items do not use all available space on the main-axis (horizontally).
+
+  - It defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: blueviolet;
+}
+
+.container {
+  border: 2px solid white;
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  /* Flexbox Code Goes Here */
+  display: flex;
+  flex-direction: column;
+  /* Default value. Items are positioned at the beginning of the container */
+  justify-content: flex-start; /* default */
+  /* Items are positioned at the end of the container */
+  justify-content: flex-end;
+  /* Items will have space between them */
+  justify-content: space-between;
+  /* Items will have space before, between, and after them */
+  justify-content: space-around;
+  /* Items are positioned in the center of the container */
+  justify-content: center;
+  /* 	Items will have equal space around them */
+  justify-content: space-evenly;
+
+  /* CHANGE THE DIRECTION FROM ROW TO COLUMN, AND PLAY AROUND WITH JUSTIFY-CONTENT */
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  background: rgb(42, 21, 62);
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}

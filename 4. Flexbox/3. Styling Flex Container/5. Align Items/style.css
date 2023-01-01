@@ -1,0 +1,47 @@
+/* 
+  * Align Items
+  - The align-items property specifies the default alignment for items inside the flexible container.
+
+  - The align-items property defines the default behavior for how items are laid out along the cross axis (perpendicular to the main axis).
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: blueviolet;
+}
+
+.container {
+  border: 2px solid white;
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  /* Flexbox Code Goes Here */
+  display: flex;
+  flex-direction: row;
+  /* Default. Items are stretched to fit the container */
+  align-items: stretch; /* default */
+  /* Items are positioned at the end of the container */
+  align-items: flex-end; /* first */
+  /* Items are positioned at the beginning of the container */
+  align-items: flex-start; /* second */
+  /* Items are positioned at the center of the container */
+  align-items: center;
+
+  /* CHANGE THE DIRECTION FROM ROW TO COLUMN, AND PLAY AROUND  WITH ALIGN ITEM */
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  background: rgb(42, 21, 62);
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}

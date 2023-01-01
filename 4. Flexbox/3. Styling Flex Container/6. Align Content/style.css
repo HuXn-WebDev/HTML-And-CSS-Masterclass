@@ -1,0 +1,50 @@
+/* 
+  * Align Content
+  - The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
+
+  - It helps to align a flex container’s lines within it when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+  Note: this property has no effect when the flexbox has only a single line.
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: blueviolet;
+}
+
+.container {
+  border: 2px solid white;
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  /* Flexbox Code Goes Here */
+  display: flex;
+  flex-wrap: wrap;
+  /* stretch (default): lines stretch to take up the remaining space */
+  align-content: stretch;
+  /* flex-end: lines packed to the end of the container */
+  align-content: flex-end;
+  /* flex-start: lines packed to the start of the container */
+  align-content: flex-start;
+  /* center: lines packed to the center of the container */
+  align-content: center;
+  /* space-around: lines evenly distributed with equal space between them */
+  align-content: space-around;
+  /* space-between: lines evenly distributed; the first line is at the start of the container while the last one is at the end */
+  align-content: space-between;
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  background: rgb(42, 21, 62);
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}
