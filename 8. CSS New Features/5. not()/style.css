@@ -1,0 +1,47 @@
+/* 
+     :not(selector)
+    - The :not(selector) selector matches every element that is NOT the specified element/selector.
+*/
+
+.section {
+  width: 42em;
+  margin: 0 auto;
+  background: rgb(32, 31, 31);
+  padding: 4rem;
+}
+
+body {
+  background: #333;
+  color: white;
+  padding: 2rem;
+}
+
+/* Class Selector on Nested Element */
+.section.A .article-title :not(.content) {
+  color: #31cdf7;
+}
+
+/* Class Selector w/out Nesting */
+.section.B :not(.content) {
+  font-size: 14px;
+  color: teal;
+}
+
+/* This demo uses the attribute as our simple selector */
+.section.C button:not([disabled]) {
+  font-size: 20px;
+  background: crimson;
+}
+
+/* Attribute Selector */
+.section.D a:not([href*="https://www.udemy.com/user/huxn-webdev"])
+{
+  color: burlywood;
+  text-decoration: none;
+}
+
+/* nth-child Pseudo Class */
+.section.F p:not(:nth-child(2n + 1)) {
+  border: 2px solid purple;
+  color: white;
+}
